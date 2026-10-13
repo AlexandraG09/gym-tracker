@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#FCF7FA">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="GymTracker">
+    <title>GymTracker</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="icons/app-icon-180.png">
+    <link rel="stylesheet" href="css/estilos.css?v=1">
+</head>
+<body>
+    <div id="app-shell">
+        <main id="conteudo" aria-live="polite"></main>
+
+        <nav class="barra-inferior" aria-label="Navegação principal">
+            <button class="item-barra ativo" type="button" data-tab="inicio" aria-label="Início">
+                <span class="icone-barra" data-icon="house"></span>
+                <span>Início</span>
+            </button>
+            <button class="item-barra" type="button" data-tab="treinos" aria-label="Treinos">
+                <span class="icone-barra" data-icon="dumbbell"></span>
+                <span>Treinos</span>
+            </button>
+            <button class="item-barra" type="button" data-tab="evolucao" aria-label="Evolução">
+                <span class="icone-barra" data-icon="chart"></span>
+                <span>Evolução</span>
+            </button>
+            <button class="item-barra" type="button" data-tab="corpo" aria-label="Corpo">
+                <span class="icone-barra" data-icon="body"></span>
+                <span>Corpo</span>
+            </button>
+        </nav>
+    </div>
+
+    <div id="modal-root"></div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="js/database.js?v=1"></script>
+    <script src="js/app.js?v=1"></script>
+</body>
+</html>

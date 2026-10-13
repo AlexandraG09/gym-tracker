@@ -1,0 +1,22 @@
+{
+  "name": "GymTracker",
+  "short_name": "GymTracker",
+  "description": "Treinos, evolução e medições corporais num só lugar.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#FCF7FA",
+  "theme_color": "#FCF7FA",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icons/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+GYMTRACKER WEB — versão 1
+
+Esta pasta é a conversão web/PWA do projeto Swift GymTracker enviado.
+Mantém a paleta rosa/lavanda e a estrutura principal da app original.
+
+ESTRUTURA
+- index.html
+- manifest.webmanifest
+- service-worker.js
+- css/estilos.css
+- js/database.js
+- js/app.js
+- icons/
+
+FUNCIONALIDADES INCLUÍDAS
+- Início com resumo, próximo treino, atividade dos últimos 7 dias, composição corporal e último treino.
+- Treinos: criar, editar e eliminar planos.
+- Exercícios: fotografia, grupo muscular, séries, repetições, carga planeada e notas.
+- Registo manual de séries e histórico por exercício.
+- Sessões de treino com modo Normal/Focado, descanso 60/90/120 s, registo/edição/eliminação de séries e resumo final.
+- Resumo final com duração, séries, volume, exercícios e recordes pessoais de carga.
+- Calendário mensal, treinos planeados e rotinas semanais.
+- Evolução: carga, volume semanal, recordes e consistência.
+- Corpo: peso, massa gorda, massa muscular, perímetros, fotografias e histórico.
+- Dados guardados localmente com IndexedDB.
+- PWA instalável pelo Safari quando publicada por HTTPS (por exemplo GitHub Pages).
+
+IMPORTANTE
+Os dados que já existirem na versão Xcode/SwiftData não passam automaticamente para esta versão web. A versão web começa com a sua própria base de dados local.
+
+TESTE
+1. Abra index.html no Safari.
+2. Crie um treino.
+3. Adicione pelo menos um exercício.
+4. Inicie uma sessão e registe séries.
+5. Termine a sessão e confirme o resumo.
+6. Teste Calendário, Evolução e Corpo.
+
+PUBLICAR NO GITHUB PAGES
+1. Crie um repositório novo no GitHub, por exemplo: gym-tracker.
+2. Envie TODO o conteúdo desta pasta para a raiz do repositório.
+3. Em Settings > Pages, publique a branch main a partir da raiz (/).
+4. Quando o site estiver disponível, abra-o no Safari do iPhone.
+5. Partilhar > Adicionar ao ecrã principal.
+
+ATUALIZAÇÕES FUTURAS
+Quando alterar ficheiros, aumente a versão de cache em service-worker.js (gymtracker-v1 para gymtracker-v2, etc.) e também os ?v=1 do index.html se CSS/JS tiverem sido alterados.
